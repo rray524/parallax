@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Google Map</title>
+    <style type="text/css">
+        .my_gig {
+            text-align: center;
+            width: 100%;
+        }
+        
+        body {
+            margin: 0px auto;
+            padding: 0px;
+            text-align: center;
+            font-family: helvetica;
+            color: white;
+        }
+        
+        #wrapper {
+            position: relative;
+        }
+        
+        #header {
+            position: fixed;
+            color: white;
+            background: #000;
+            right: 0;
+            left: 0;
+            top: 0;
+            text-align: left;
+            padding: 20px 2%;
+        }
+        
+        #wrapper section {
+            height: 750px;
+        }
+        
+        #wrapper h2 {
+            margin: 0px;
+            text-align: center;
+            padding-top: 250px;
+            font-size: 50px;
+            text-shadow: 2px 2px 3px #000;
+            color: #F74949;
+        }
+        
+        #wrapper p {
+            font-size: 22px;
+        }
+        
+        #div_one {
+            background: url("image-1.png") no-repeat;
+        }
+        
+        #div_two {
+            background: url("image-2.jpg") no-repeat;
+        }
+        
+        #div_three {
+            background: url("image-3.jpg") no-repeat;
+        }
+        
+        #div_one,
+        #div_two,
+        #div_three {
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="site-title">
+                <a rel="home" title="MY FOLIO" href="http://rray524.github.io/rahulfolio/">MY FOLIO</a>
+            </div>
+        </div>
+        <section id="div_one">
+            <h2>First Section Header</h2>
+        </section>
+
+        <section id="div_two">
+            <h2>Second Section Header</h2>
+            <p>Second Section content goes here... Second Section content goes here... Second Section content goes here...</p>
+        </section>
+
+        <section id="div_three">
+            <h2>Third Section Header</h2>
+            <p>Third Section content goes here... Third Section content goes here.. Third Section content goes here.. Third Section content goes here..</p>
+        </section>
+    </div>
+
+
+    <div class="my_gig">
+        <div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
+            <a itemprop='url' href=https://www.fiverr.com/rahulray923 rel="nofollow" target="_blank" style='display: inline-block;'>
+                <div class='fiverr-seller-content' id='fiverr-seller-widget-content-9a3d0014-cc75-4baf-a18b-7017b54e913d' itemprop='contentURL' style='display: none;'></div>
+                <div id='fiverr-widget-seller-data' style='display: none;'>
+                    <div itemprop='name'>rahulray923</div>
+                    <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
+                    <div itemprop='jobtitle'>Seller</div>
+                    <div itemprop='description'>I never say NO to anything just because that is something I dont know. I always say YES and learn how to do that. If you hire me, I will never disappoint you. I stick to my commitment and know multiple languages. I am very comfortable with calls, gadgets and staying connected. I am OPEN to work. </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script id='fiverr-seller-widget-script-9a3d0014-cc75-4baf-a18b-7017b54e913d' src='https://widgets.fiverr.com/api/v1/seller/rahulray923?widget_id=9a3d0014-cc75-4baf-a18b-7017b54e913d' data-config='{"category_name":"Programming & Tech"}' async='true' defer='true'></script>
+    <script>
+        $(window).scroll(function () {
+            var yPos = -($(window).scrollTop() / 6);
+            if ($(window).scrollTop() > 100) {
+                document.getElementById("div_one").style.backgroundPosition = "100% " + yPos + "px";
+            }
+            if ($(window).scrollTop() < 100) {
+                document.getElementById("div_one").style.backgroundPosition = "100% 100%";
+            }
+        });
+    </script>
+
+</body>
+
+</html>
